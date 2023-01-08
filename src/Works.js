@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import TreeView from 'react-treeview';
 import 'react-treeview/react-treeview.css';
 import data from "./nandhu.json";
+import date from "./date.json";
 
-const INITIAL_LIST = Array.from({ length: 75 }, () => false);
-const COUNT_LIST = Array.from({ length: 75 }, () => 0);
+
+const INITIAL_LIST = Array.from({ length: 76 }, () => false);
+const COUNT_LIST = Array.from({ length: 76 }, () => 0);
 
 function Works() {
   const [list, setList] = useState(INITIAL_LIST)
@@ -14,32 +16,49 @@ function Works() {
     gettingdatas: [],
     response: [],
   });
-
   
-  const handleOnChange = (e,name,i) => {
+  const category=[];
+  data.map((node)=>{
+    if(!category.includes(node.diagnosis_category)){
+      category.push(node.diagnosis_category)
+      category.push([node.diagnosis_tags,[node.name]]);
+    }
+    else{
+      const index=category.indexOf(node.diagnosis_category);
+      if(!category[index+1].includes(node.diagnosis_tags)){
+        category[index+1].push(node.diagnosis_tags,[node.name]);
+      }
+      else{
+        const itag=category[index+1].indexOf(node.diagnosis_tags)+1;
+        category[index+1][itag].push(node.name);
+      }
+    }
+  })
+
+  const handleOnChange = (e,name) => {
 
     const { checked } = e.target;
-    const { gettingdatas,resposedatas} = userinfo;
+    const { gettingdatas} = userinfo;
     const passdata=name;
     if (checked) {
-      COUNT_LIST[i]+=1;
+      //COUNT_LIST[i]+=1;
       setUserInfo({
         gettingdatas: [...gettingdatas, passdata],
         response: [...gettingdatas, passdata],
       });
     }
     else {
-      COUNT_LIST[i]-=1;
+      //COUNT_LIST[i]-=1;
       setUserInfo({
-        gettingdatas: gettingdatas.filter((e) => e != passdata),
-        response: gettingdatas.filter((e) => e != passdata),
+        gettingdatas: gettingdatas.filter((e) => e !== passdata),
+        response: gettingdatas.filter((e) => e !== passdata),
       });
     }
-    if(COUNT_LIST[i]>0){
-      INITIAL_LIST[i]=true;
-    }else{
-      INITIAL_LIST[i]=false;
-    }
+    // if(COUNT_LIST[i]>0){
+    //   INITIAL_LIST[i]=true;
+    // }else{
+    //   INITIAL_LIST[i]=false;
+    // }
   };
   return (
     <Workspage>
@@ -50,45 +69,63 @@ function Works() {
               <Button>Add new selection</Button>
             </Header>
             <Content>
-                  {data.map((node,i)=>{
-                    const type=i;
-                    const label=<><input type="checkbox" checked={list[i]}/><span>Employee {i}</span></>
-                    return(
-                      <TreeView
-                        key={type+"|"+i}
-                        nodeLabel={label}
+            
+                <TreeView
+                        key="date"
+                        nodeLabel={<><input type="checkbox" checked={list[75]}/><span>Last filled prescription</span></>}
                         defaultCollapsed={true}>
-                                  <input
-                                    type="checkbox"
-                                    id="topping"
-                                    name="topping"
-                                    //onChange={()=>handleOnChange(i,input1)}
-                                    onChange={(e)=>handleOnChange(e,node.id,i)}
-                                  />{node.id}<br/>
-                                  <input
-                                    type="checkbox"
-                                    id="topping"
-                                    name="topping"
-                                    //onChange={()=>handleOnChange(i,input2)}
-                                    onChange={(e)=>handleOnChange(e,node.name,i)}
-                                  />{node.name}<br/>
-                                  <input
-                                    type="checkbox"
-                                    id="topping"
-                                    name="topping"
-                                    //onChange={()=>handleOnChange(i,input3)}
-                                    onChange={(e)=>handleOnChange(e,node.diagnosis_category,i)}
-                                  />{node.diagnosis_category}<br/>
-                                  <input
-                                    type="checkbox"
-                                    id="topping"
-                                    name="topping"
-                                    //onChange={()=>handleOnChange(i,input4)}
-                                    onChange={(e)=>handleOnChange(e,node.diagnosis_tags,i)}
-                                  />{node.diagnosis_tags}
-                        </TreeView>
+                    {date.map((node,i)=>{
+                    return(
+                      <div>
+                          <input
+                              type="checkbox"
+                              //onChange={()=>handleOnChange(i,input2)}
+                              onChange={(e)=>handleOnChange(e,node.date,75)}
+                          />{node.date}<br/>
+                      </div>
                     )
                   })}
+                  </TreeView>
+                {
+                  category.map((node,i)=>{
+                    if(i%2==0){
+                      const clabel=<><input type="checkbox" checked={list[i]}/><span>{node}</span></>
+                      return(
+                        <TreeView
+                          nodeLabel={clabel}
+                          defaultCollapsed={true}
+                        >
+                        {
+                          category[i+1].map((tnode,j)=>{
+                            if(j%2==0){
+                              const tlabel=<><input type="checkbox" checked={list[i]}/><span>{tnode}</span></>
+                              return(
+                                <TreeView
+                                  nodeLabel={tlabel}
+                                  defaultCollapsed={true}
+                                >{
+                                  category[i+1][j+1].map((name)=>{
+                                    return(
+                                      <>
+                                      <input 
+                                        type="checkbox"
+                                        onChange={(e)=>handleOnChange(e,name)}
+                                        />{name}<br/>
+                                      </>
+                                    )
+                                  })
+                                }
+                                </TreeView>
+                              )
+                            }
+                          })
+                        }
+                        </TreeView>
+                      )
+                    }
+                  })
+                }
+                  
             </Content>
           </Card>
         </Left>

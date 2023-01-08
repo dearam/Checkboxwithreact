@@ -1,415 +1,520 @@
 [
-    {
-      "id": 97,
-      "name": "COPD - Acute Exacerbation - Antibiotic-Steroid",
-      "diagnosis_category": "COPD",
-      "diagnosis_tags": "Acute Exacerbation",
-      "position": null
-    },
-    {
-      "id": 2250,
-      "name": "Ivermectin",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI VIRAL",
-      "position": null
-    },
-    {
-      "id": 2249,
-      "name": "Doxycycline",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI VIRAL",
-      "position": null
-    },
-    {
-      "id": 1840,
-      "name": "Iron + B12",
-      "diagnosis_category": "Others",
-      "diagnosis_tags": "Anaemia",
-      "position": null
-    },
-    {
-      "id": 1781,
-      "name": "HEMOPTYSIS1",
-      "diagnosis_category": "HEMOPTYSIS",
-      "diagnosis_tags": "Mild To Moderate",
-      "position": null
-    },
-    {
-      "id": 107,
-      "name": "TB - IP Individual drugs",
-      "diagnosis_category": "TB",
-      "diagnosis_tags": "IP Individual drugs",
-      "position": null
-    },
-    {
-      "id": 106,
-      "name": "TB - IP FDC",
-      "diagnosis_category": "TB",
-      "diagnosis_tags": "IP FDC",
-      "position": null
-    },
-    {
-      "id": 105,
-      "name": "TB - CP Individual drugs",
-      "diagnosis_category": "TB",
-      "diagnosis_tags": "CP Individual drugs",
-      "position": null
-    },
-    {
-      "id": 104,
-      "name": "TB - CP FDC",
-      "diagnosis_category": "TB",
-      "diagnosis_tags": "CP FDC",
-      "position": null
-    },
-    {
-      "id": 103,
-      "name": "TB - ATT Hepato Protective Regimen",
-      "diagnosis_category": "TB",
-      "diagnosis_tags": "ATT Hepato Protective Regimen",
-      "position": null
-    },
-    {
-      "id": 2251,
-      "name": "FAVIPIRAVIR",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI VIRAL",
-      "position": null
-    },
-    {
-      "id": 96,
-      "name": "Bronchiectasis - Acute Exacerbation - Antibiotic-Steroid",
-      "diagnosis_category": "Bronchiectasis",
-      "diagnosis_tags": "Acute Exacerbation",
-      "position": null
-    },
-    {
-      "id": 95,
-      "name": "Asthma - Acute Exacerbation - Antibiotic-Steroid",
-      "diagnosis_category": "Asthma",
-      "diagnosis_tags": "Acute Exacerbation",
-      "position": null
-    },
-    {
-      "id": 94,
-      "name": "COPD - Acute Exacerbation - Antibiotics",
-      "diagnosis_category": "COPD",
-      "diagnosis_tags": "Acute Exacerbation",
-      "position": null
-    },
-    {
-      "id": 93,
-      "name": "Bronchiectasis - Acute Exacerbation - Antibiotics",
-      "diagnosis_category": "Bronchiectasis",
-      "diagnosis_tags": "Acute Exacerbation",
-      "position": null
-    },
-    {
-      "id": 92,
-      "name": "Asthma - Acute Exacerbation - Antibiotics",
-      "diagnosis_category": "Asthma",
-      "diagnosis_tags": "Acute Exacerbation",
-      "position": null
-    },
-    {
-      "id": 91,
-      "name": "COPD - Cor Pulmonale2",
-      "diagnosis_category": "COPD",
-      "diagnosis_tags": "Cor Pulmonale",
-      "position": null
-    },
-    {
-      "id": 90,
-      "name": "Bronchiectasis - Cor Pulmonale",
-      "diagnosis_category": "Bronchiectasis",
-      "diagnosis_tags": "Cor Pulmonale",
-      "position": null
-    },
-    {
-      "id": 89,
-      "name": "Asthma - Cor Pulmonale",
-      "diagnosis_category": "Asthma",
-      "diagnosis_tags": "Cor Pulmonale",
-      "position": null
-    },
-    {
-      "id": 2262,
-      "name": "Fexofenadine",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI HISTAMINE H1",
-      "position": null
-    },
-    {
-      "id": 2271,
-      "name": "Low",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "Default",
-      "position": null
-    },
-    {
-      "id": 2270,
-      "name": "High",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "DEFAULT",
-      "position": null
-    },
-    {
-      "id": 2269,
-      "name": "All",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "Vitamins",
-      "position": null
-    },
-    {
-      "id": 2268,
-      "name": "Melatonin And Alprazolam",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "Anxiolytics",
-      "position": null
-    },
-    {
-      "id": 2267,
-      "name": "Zolpidem",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "Anxiolytics",
-      "position": null
-    },
-    {
-      "id": 2266,
-      "name": "Rabeprazole",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "PPI",
-      "position": null
-    },
-    {
-      "id": 2265,
-      "name": "Esomeprazole",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "PPI",
-      "position": null
-    },
-    {
-      "id": 2264,
-      "name": "Famotidine",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI HISTAMINE H2",
-      "position": null
-    },
-    {
-      "id": 2263,
-      "name": "Ranitidine",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI HISTAMINE H2",
-      "position": null
-    },
-    {
-      "id": 88,
-      "name": "URTI - Sinusitis - Antibiotic 3",
-      "diagnosis_category": "URTI",
-      "diagnosis_tags": "Sinusitis",
-      "position": null
-    },
-    {
-      "id": 2261,
-      "name": "Levocetrizine",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI HISTAMINE H1",
-      "position": null
-    },
-    {
-      "id": 2260,
-      "name": "Cetrizine",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI HISTAMINE H1",
-      "position": null
-    },
-    {
-      "id": 2258,
-      "name": "Prednisolone",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI INFLAMMATORY",
-      "position": null
-    },
-    {
-      "id": 2257,
-      "name": "Deflazacort",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI INFLAMMATORY",
-      "position": null
-    },
-    {
-      "id": 2256,
-      "name": "Methyl Prednisolone",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI INFLAMMATORY",
-      "position": null
-    },
-    {
-      "id": 2255,
-      "name": "Anti Platelet Agents",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI COAGULANTS",
-      "position": null
-    },
-    {
-      "id": 2254,
-      "name": "Apixaban",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI COAGULANTS",
-      "position": null
-    },
-    {
-      "id": 2252,
-      "name": "DABIGATRAN",
-      "diagnosis_category": "COVID",
-      "diagnosis_tags": "ANTI COAGULANTS",
-      "position": null
-    },
-    {
-      "id": 59,
-      "name": "Asthma - Severe-DPI",
-      "diagnosis_category": "Asthma",
-      "diagnosis_tags": "Severe-DPI",
-      "position": null
-    },
-    {
-      "id": 68,
-      "name": "Bronchiectasis - Severe-MDI",
-      "diagnosis_category": "Bronchiectasis",
-      "diagnosis_tags": "Severe-MDI",
-      "position": null
-    },
-    {
-      "id": 67,
-      "name": "Bronchiectasis - Severe-DPI",
-      "diagnosis_category": "Bronchiectasis",
-      "diagnosis_tags": "Severe-DPI",
-      "position": null
-    },
-    {
-      "id": 66,
-      "name": "Bronchiectasis - Mild-Oral",
-      "diagnosis_category": "Bronchiectasis",
-      "diagnosis_tags": "Mild-Oral",
-      "position": null
-    },
-    {
-      "id": 65,
-      "name": "Bronchiectasis - Mild-Nebuliser",
-      "diagnosis_category": "Bronchiectasis",
-      "diagnosis_tags": "Mild-Nebuliser",
-      "position": null
-    },
-    {
-      "id": 64,
-      "name": "Bronchiectasis - Mild-MDI",
-      "diagnosis_category": "Bronchiectasis",
-      "diagnosis_tags": "Mild-MDI",
-      "position": null
-    },
-    {
-      "id": 63,
-      "name": "Bronchiectasis - Mild-DPI",
-      "diagnosis_category": "Bronchiectasis",
-      "diagnosis_tags": "Mild-DPI",
-      "position": null
-    },
-    {
-      "id": 62,
-      "name": "Asthma - Severe-Oral",
-      "diagnosis_category": "Asthma",
-      "diagnosis_tags": "Severe-Oral",
-      "position": null
-    },
-    {
-      "id": 61,
-      "name": "Asthma - Severe-Nebuliser",
-      "diagnosis_category": "Asthma",
-      "diagnosis_tags": "Severe-Nebuliser",
-      "position": null
-    },
-    {
-      "id": 60,
-      "name": "Asthma - Severe-MDI",
-      "diagnosis_category": "Asthma",
-      "diagnosis_tags": "Severe-MDI",
-      "position": null
-    },
-    {
-      "id": 69,
-      "name": "Bronchiectasis - Severe-Nebuliser",
-      "diagnosis_category": "Bronchiectasis",
-      "diagnosis_tags": "Severe-Nebuliser",
-      "position": null
-    },
-    {
-      "id": 58,
-      "name": "Asthma - Mild-Oral",
-      "diagnosis_category": "Asthma",
-      "diagnosis_tags": "Mild-Oral",
-      "position": null
-    },
-    {
-      "id": 57,
-      "name": "Asthma - Mild-Nebuliser",
-      "diagnosis_category": "Asthma",
-      "diagnosis_tags": "Mild-Nebuliser",
-      "position": null
-    },
-    {
-      "id": 56,
-      "name": "Asthma - Mild-MDI",
-      "diagnosis_category": "Asthma",
-      "diagnosis_tags": "Mild-MDI",
-      "position": null
-    },
-    {
-      "id": 55,
-      "name": "Asthma - Mild-DPI",
-      "diagnosis_category": "Asthma",
-      "diagnosis_tags": "Mild-DPI",
-      "position": null
-    },
-    {
-      "id": 54,
-      "name": "Allergic Rhinitis - Oral-Steroid",
-      "diagnosis_category": "Allergic Rhinitis",
-      "diagnosis_tags": "Oral-Steroid",
-      "position": null
-    },
-    {
-      "id": 53,
-      "name": "Allergic Rhinitis - Nasal Spray",
-      "diagnosis_category": "Allergic Rhinitis",
-      "diagnosis_tags": "Nasal Spray",
-      "position": null
-    },
-    {
-      "id": 52,
-      "name": "Allergic Rhinitis - Nasal drops-Spray",
-      "diagnosis_category": "Allergic Rhinitis",
-      "diagnosis_tags": "Nasal drops-Spray",
-      "position": null
-    },
-    {
-      "id": 49,
-      "name": "Acute Bronchitis - Antibiotic 2",
-      "diagnosis_category": "Acute Bronchitis",
-      "diagnosis_tags": "Antibiotic 2",
-      "position": null
-    },
-    {
-      "id": 78,
-      "name": "COPD - Severe-Oral1",
-      "diagnosis_category": "COPD",
-      "diagnosis_tags": "Severe-Oral",
-      "position": null
-    },
-    {
-      "id": 87,
-      "name": "URTI - Sinusitis - Antibiotic 2",
-      "diagnosis_category": "URTI",
-      "diagnosis_tags": "Sinusitis",
-      "position": null
-    }
-  ]
+  {
+    "id": 97,
+    "name": "COPD - Acute Exacerbation - Antibiotic-Steroid",
+    "diagnosis_category": "COPD",
+    "diagnosis_tags": "Acute Exacerbation",
+    "position": null
+  },
+  {
+    "id": 2250,
+    "name": "Ivermectin",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI VIRAL",
+    "position": null
+  },
+  {
+    "id": 2249,
+    "name": "Doxycycline",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI VIRAL",
+    "position": null
+  },
+  {
+    "id": 1840,
+    "name": "Iron + B12",
+    "diagnosis_category": "Others",
+    "diagnosis_tags": "Anaemia",
+    "position": null
+  },
+  {
+    "id": 1781,
+    "name": "HEMOPTYSIS1",
+    "diagnosis_category": "HEMOPTYSIS",
+    "diagnosis_tags": "Mild To Moderate",
+    "position": null
+  },
+  {
+    "id": 107,
+    "name": "TB - IP Individual drugs",
+    "diagnosis_category": "TB",
+    "diagnosis_tags": "IP Individual drugs",
+    "position": null
+  },
+  {
+    "id": 106,
+    "name": "TB - IP FDC",
+    "diagnosis_category": "TB",
+    "diagnosis_tags": "IP FDC",
+    "position": null
+  },
+  {
+    "id": 105,
+    "name": "TB - CP Individual drugs",
+    "diagnosis_category": "TB",
+    "diagnosis_tags": "CP Individual drugs",
+    "position": null
+  },
+  {
+    "id": 104,
+    "name": "TB - CP FDC",
+    "diagnosis_category": "TB",
+    "diagnosis_tags": "CP FDC",
+    "position": null
+  },
+  {
+    "id": 103,
+    "name": "TB - ATT Hepato Protective Regimen",
+    "diagnosis_category": "TB",
+    "diagnosis_tags": "ATT Hepato Protective Regimen",
+    "position": null
+  },
+  {
+    "id": 2251,
+    "name": "FAVIPIRAVIR",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI VIRAL",
+    "position": null
+  },
+  {
+    "id": 96,
+    "name": "Bronchiectasis - Acute Exacerbation - Antibiotic-Steroid",
+    "diagnosis_category": "Bronchiectasis",
+    "diagnosis_tags": "Acute Exacerbation",
+    "position": null
+  },
+  {
+    "id": 95,
+    "name": "Asthma - Acute Exacerbation - Antibiotic-Steroid",
+    "diagnosis_category": "Asthma",
+    "diagnosis_tags": "Acute Exacerbation",
+    "position": null
+  },
+  {
+    "id": 94,
+    "name": "COPD - Acute Exacerbation - Antibiotics",
+    "diagnosis_category": "COPD",
+    "diagnosis_tags": "Acute Exacerbation",
+    "position": null
+  },
+  {
+    "id": 93,
+    "name": "Bronchiectasis - Acute Exacerbation - Antibiotics",
+    "diagnosis_category": "Bronchiectasis",
+    "diagnosis_tags": "Acute Exacerbation",
+    "position": null
+  },
+  {
+    "id": 92,
+    "name": "Asthma - Acute Exacerbation - Antibiotics",
+    "diagnosis_category": "Asthma",
+    "diagnosis_tags": "Acute Exacerbation",
+    "position": null
+  },
+  {
+    "id": 91,
+    "name": "COPD - Cor Pulmonale2",
+    "diagnosis_category": "COPD",
+    "diagnosis_tags": "Cor Pulmonale",
+    "position": null
+  },
+  {
+    "id": 90,
+    "name": "Bronchiectasis - Cor Pulmonale",
+    "diagnosis_category": "Bronchiectasis",
+    "diagnosis_tags": "Cor Pulmonale",
+    "position": null
+  },
+  {
+    "id": 89,
+    "name": "Asthma - Cor Pulmonale",
+    "diagnosis_category": "Asthma",
+    "diagnosis_tags": "Cor Pulmonale",
+    "position": null
+  },
+  {
+    "id": 2262,
+    "name": "Fexofenadine",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI HISTAMINE H1",
+    "position": null
+  },
+  {
+    "id": 2271,
+    "name": "Low",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "Default",
+    "position": null
+  },
+  {
+    "id": 2270,
+    "name": "High",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "DEFAULT",
+    "position": null
+  },
+  {
+    "id": 2269,
+    "name": "All",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "Vitamins",
+    "position": null
+  },
+  {
+    "id": 2268,
+    "name": "Melatonin And Alprazolam",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "Anxiolytics",
+    "position": null
+  },
+  {
+    "id": 2267,
+    "name": "Zolpidem",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "Anxiolytics",
+    "position": null
+  },
+  {
+    "id": 2266,
+    "name": "Rabeprazole",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "PPI",
+    "position": null
+  },
+  {
+    "id": 2265,
+    "name": "Esomeprazole",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "PPI",
+    "position": null
+  },
+  {
+    "id": 2264,
+    "name": "Famotidine",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI HISTAMINE H2",
+    "position": null
+  },
+  {
+    "id": 2263,
+    "name": "Ranitidine",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI HISTAMINE H2",
+    "position": null
+  },
+  {
+    "id": 88,
+    "name": "URTI - Sinusitis - Antibiotic 3",
+    "diagnosis_category": "URTI",
+    "diagnosis_tags": "Sinusitis",
+    "position": null
+  },
+  {
+    "id": 2261,
+    "name": "Levocetrizine",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI HISTAMINE H1",
+    "position": null
+  },
+  {
+    "id": 2260,
+    "name": "Cetrizine",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI HISTAMINE H1",
+    "position": null
+  },
+  {
+    "id": 2258,
+    "name": "Prednisolone",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI INFLAMMATORY",
+    "position": null
+  },
+  {
+    "id": 2257,
+    "name": "Deflazacort",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI INFLAMMATORY",
+    "position": null
+  },
+  {
+    "id": 2256,
+    "name": "Methyl Prednisolone",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI INFLAMMATORY",
+    "position": null
+  },
+  {
+    "id": 2255,
+    "name": "Anti Platelet Agents",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI COAGULANTS",
+    "position": null
+  },
+  {
+    "id": 2254,
+    "name": "Apixaban",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI COAGULANTS",
+    "position": null
+  },
+  {
+    "id": 2252,
+    "name": "DABIGATRAN",
+    "diagnosis_category": "COVID",
+    "diagnosis_tags": "ANTI COAGULANTS",
+    "position": null
+  },
+  {
+    "id": 59,
+    "name": "Asthma - Severe-DPI",
+    "diagnosis_category": "Asthma",
+    "diagnosis_tags": "Severe-DPI",
+    "position": null
+  },
+  {
+    "id": 68,
+    "name": "Bronchiectasis - Severe-MDI",
+    "diagnosis_category": "Bronchiectasis",
+    "diagnosis_tags": "Severe-MDI",
+    "position": null
+  },
+  {
+    "id": 67,
+    "name": "Bronchiectasis - Severe-DPI",
+    "diagnosis_category": "Bronchiectasis",
+    "diagnosis_tags": "Severe-DPI",
+    "position": null
+  },
+  {
+    "id": 66,
+    "name": "Bronchiectasis - Mild-Oral",
+    "diagnosis_category": "Bronchiectasis",
+    "diagnosis_tags": "Mild-Oral",
+    "position": null
+  },
+  {
+    "id": 65,
+    "name": "Bronchiectasis - Mild-Nebuliser",
+    "diagnosis_category": "Bronchiectasis",
+    "diagnosis_tags": "Mild-Nebuliser",
+    "position": null
+  },
+  {
+    "id": 64,
+    "name": "Bronchiectasis - Mild-MDI",
+    "diagnosis_category": "Bronchiectasis",
+    "diagnosis_tags": "Mild-MDI",
+    "position": null
+  },
+  {
+    "id": 63,
+    "name": "Bronchiectasis - Mild-DPI",
+    "diagnosis_category": "Bronchiectasis",
+    "diagnosis_tags": "Mild-DPI",
+    "position": null
+  },
+  {
+    "id": 62,
+    "name": "Asthma - Severe-Oral",
+    "diagnosis_category": "Asthma",
+    "diagnosis_tags": "Severe-Oral",
+    "position": null
+  },
+  {
+    "id": 61,
+    "name": "Asthma - Severe-Nebuliser",
+    "diagnosis_category": "Asthma",
+    "diagnosis_tags": "Severe-Nebuliser",
+    "position": null
+  },
+  {
+    "id": 60,
+    "name": "Asthma - Severe-MDI",
+    "diagnosis_category": "Asthma",
+    "diagnosis_tags": "Severe-MDI",
+    "position": null
+  },
+  {
+    "id": 69,
+    "name": "Bronchiectasis - Severe-Nebuliser",
+    "diagnosis_category": "Bronchiectasis",
+    "diagnosis_tags": "Severe-Nebuliser",
+    "position": null
+  },
+  {
+    "id": 58,
+    "name": "Asthma - Mild-Oral",
+    "diagnosis_category": "Asthma",
+    "diagnosis_tags": "Mild-Oral",
+    "position": null
+  },
+  {
+    "id": 57,
+    "name": "Asthma - Mild-Nebuliser",
+    "diagnosis_category": "Asthma",
+    "diagnosis_tags": "Mild-Nebuliser",
+    "position": null
+  },
+  {
+    "id": 56,
+    "name": "Asthma - Mild-MDI",
+    "diagnosis_category": "Asthma",
+    "diagnosis_tags": "Mild-MDI",
+    "position": null
+  },
+  {
+    "id": 55,
+    "name": "Asthma - Mild-DPI",
+    "diagnosis_category": "Asthma",
+    "diagnosis_tags": "Mild-DPI",
+    "position": null
+  },
+  {
+    "id": 54,
+    "name": "Allergic Rhinitis - Oral-Steroid",
+    "diagnosis_category": "Allergic Rhinitis",
+    "diagnosis_tags": "Oral-Steroid",
+    "position": null
+  },
+  {
+    "id": 53,
+    "name": "Allergic Rhinitis - Nasal Spray",
+    "diagnosis_category": "Allergic Rhinitis",
+    "diagnosis_tags": "Nasal Spray",
+    "position": null
+  },
+  {
+    "id": 52,
+    "name": "Allergic Rhinitis - Nasal drops-Spray",
+    "diagnosis_category": "Allergic Rhinitis",
+    "diagnosis_tags": "Nasal drops-Spray",
+    "position": null
+  },
+  {
+    "id": 49,
+    "name": "Acute Bronchitis - Antibiotic 2",
+    "diagnosis_category": "Acute Bronchitis",
+    "diagnosis_tags": "Antibiotic 2",
+    "position": null
+  },
+  {
+    "id": 78,
+    "name": "COPD - Severe-Oral1",
+    "diagnosis_category": "COPD",
+    "diagnosis_tags": "Severe-Oral",
+    "position": null
+  },
+  {
+    "id": 87,
+    "name": "URTI - Sinusitis - Antibiotic 2",
+    "diagnosis_category": "URTI",
+    "diagnosis_tags": "Sinusitis",
+    "position": null
+  },
+  {
+    "id": 85,
+    "name": "URTI - Sinusitis - Antibiotic 1",
+    "diagnosis_category": "URTI",
+    "diagnosis_tags": "Sinusitis",
+    "position": null
+  },
+  {
+    "id": 84,
+    "name": "Pneumonia - Antibiotic 2",
+    "diagnosis_category": "Pneumonia",
+    "diagnosis_tags": "Antibiotic 2",
+    "position": null
+  },
+  {
+    "id": 83,
+    "name": "Pneumonia - Antibiotic 1",
+    "diagnosis_category": "Pneumonia",
+    "diagnosis_tags": "Antibiotic 1",
+    "position": null
+  },
+  {
+    "id": 82,
+    "name": "ILD - Perfenidone-Steroid-Others",
+    "diagnosis_category": "ILD",
+    "diagnosis_tags": "Perfenidone-Steroid-Others",
+    "position": null
+  },
+  {
+    "id": 81,
+    "name": "ILD - Perfenidone",
+    "diagnosis_category": "ILD",
+    "diagnosis_tags": "Perfenidone",
+    "position": null
+  },
+  {
+    "id": 80,
+    "name": "ILD - NAC-Steroids-Others",
+    "diagnosis_category": "ILD",
+    "diagnosis_tags": "NAC-Steroids-Others",
+    "position": null
+  },
+  {
+    "id": 48,
+    "name": "Acute Bronchitis - Antibiotic 1",
+    "diagnosis_category": "Acute Bronchitis",
+    "diagnosis_tags": "Antibiotic 1",
+    "position": null
+  },
+  {
+    "id": 77,
+    "name": "COPD - Severe-Nebuliser",
+    "diagnosis_category": "COPD",
+    "diagnosis_tags": "Severe-Nebuliser",
+    "position": null
+  },
+  {
+    "id": 76,
+    "name": "COPD - Severe-MDI",
+    "diagnosis_category": "COPD",
+    "diagnosis_tags": "Severe-MDI",
+    "position": null
+  },
+  {
+    "id": 75,
+    "name": "COPD - Severe-DPI",
+    "diagnosis_category": "COPD",
+    "diagnosis_tags": "Severe-DPI",
+    "position": null
+  },
+  {
+    "id": 74,
+    "name": "COPD - Mild-Oral",
+    "diagnosis_category": "COPD",
+    "diagnosis_tags": "Mild-Oral",
+    "position": null
+  },
+  {
+    "id": 73,
+    "name": "COPD - Mild-Nebuliser",
+    "diagnosis_category": "COPD",
+    "diagnosis_tags": "Mild-Nebuliser",
+    "position": null
+  },
+  {
+    "id": 72,
+    "name": "COPD - Mild-MDI",
+    "diagnosis_category": "COPD",
+    "diagnosis_tags": "Mild-MDI",
+    "position": null
+  },
+  {
+    "id": 71,
+    "name": "COPD - Mild-DPI",
+    "diagnosis_category": "COPD",
+    "diagnosis_tags": "Mild-DPI",
+    "position": null
+  },
+  {
+    "id": 70,
+    "name": "Bronchiectasis - Severe-Oral",
+    "diagnosis_category": "Bronchiectasis",
+    "diagnosis_tags": "Severe-Oral",
+    "position": null
+  }
+]
