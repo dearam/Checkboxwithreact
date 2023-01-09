@@ -6,17 +6,47 @@ import data from "./nandhu.json";
 import date from "./date.json";
 
 
-const INITIAL_LIST = Array.from({ length: 76 }, () => false);
-const COUNT_LIST = Array.from({ length: 76 }, () => 0);
+const INITIAL_LIST = Array.from({ length: 10 }, () => false);
+const COUNT_LIST = Array.from({ length: 10 }, () => 0);
+
+const outcategory=[];
+  data.map((node)=>{
+    if(!outcategory.includes(node.diagnosis_category)){
+      outcategory.push(node.diagnosis_category)
+      outcategory.push([node.diagnosis_tags,[node.name]]);
+    }
+    else{
+      const index=outcategory.indexOf(node.diagnosis_category);
+      if(!outcategory[index+1].includes(node.diagnosis_tags)){
+        outcategory[index+1].push(node.diagnosis_tags,[node.name]);
+      }
+      else{
+        const itag=outcategory[index+1].indexOf(node.diagnosis_tags)+1;
+        outcategory[index+1][itag].push(node.name);
+      }
+    }
+  })
+const CATEGORY_LIST =[]
+  for(let i=0;i<outcategory.length;i++){
+    if(i%2==1){
+      const temp=[]
+      for(let j=0;j<outcategory[i].length/2;j++){
+        temp.push(false)
+        temp.push(0)
+      }
+      CATEGORY_LIST.push(temp)
+    }else{
+      CATEGORY_LIST.push(false)
+    }
+  }
 
 function Works() {
-  const [list, setList] = useState(INITIAL_LIST)
 
   const [userinfo, setUserInfo] = useState({
     gettingdatas: [],
     response: [],
   });
-  
+
   const category=[];
   data.map((node)=>{
     if(!category.includes(node.diagnosis_category)){
@@ -35,30 +65,54 @@ function Works() {
     }
   })
 
-  const handleOnChange = (e,name) => {
+  
+  const [list, setList] = useState(CATEGORY_LIST)
+  const [listdate, setListdate] = useState(INITIAL_LIST)
+
+  const handleOnChange = (e,name,pos1,pos2) => {
 
     const { checked } = e.target;
     const { gettingdatas} = userinfo;
     const passdata=name;
     if (checked) {
-      //COUNT_LIST[i]+=1;
+      if(pos2===-1){
+        COUNT_LIST[pos1]+=1
+      }else{
+        CATEGORY_LIST[pos1][pos2]+=1;
+      }
       setUserInfo({
         gettingdatas: [...gettingdatas, passdata],
         response: [...gettingdatas, passdata],
       });
     }
     else {
-      //COUNT_LIST[i]-=1;
+      if(pos2===-1){
+        COUNT_LIST[pos1]-=1
+      }else{
+        CATEGORY_LIST[pos1][pos2]-=1;
+      }
       setUserInfo({
         gettingdatas: gettingdatas.filter((e) => e !== passdata),
         response: gettingdatas.filter((e) => e !== passdata),
       });
     }
-    // if(COUNT_LIST[i]>0){
-    //   INITIAL_LIST[i]=true;
-    // }else{
-    //   INITIAL_LIST[i]=false;
-    // }
+    if(pos2===-1){
+      if(COUNT_LIST[pos1]>0){
+        INITIAL_LIST[pos1]=true;
+      }else{
+        INITIAL_LIST[pos1-1]=false;
+      }
+    }
+    else{
+      if(CATEGORY_LIST[pos1][pos2]>0){
+        CATEGORY_LIST[pos1-1]=true;
+        CATEGORY_LIST[pos1][pos2-1]=true;
+      }else{
+        CATEGORY_LIST[pos1-1]=false;
+        CATEGORY_LIST[pos1][pos2-1]=false;
+      }
+    }
+    console.log(INITIAL_LIST)
   };
   return (
     <Workspage>
@@ -72,7 +126,7 @@ function Works() {
             
                 <TreeView
                         key="date"
-                        nodeLabel={<><input type="checkbox" checked={list[75]}/><span>Last filled prescription</span></>}
+                        nodeLabel={<><input type="checkbox" checked={INITIAL_LIST[0]}/><span>Last filled prescription</span></>}
                         defaultCollapsed={true}>
                     {date.map((node,i)=>{
                     return(
@@ -80,7 +134,7 @@ function Works() {
                           <input
                               type="checkbox"
                               //onChange={()=>handleOnChange(i,input2)}
-                              onChange={(e)=>handleOnChange(e,node.date,75)}
+                              onChange={(e)=>handleOnChange(e,node.date,0,-1)}
                           />{node.date}<br/>
                       </div>
                     )
@@ -89,7 +143,7 @@ function Works() {
                 {
                   category.map((node,i)=>{
                     if(i%2==0){
-                      const clabel=<><input type="checkbox" checked={list[i]}/><span>{node}</span></>
+                      const clabel=<><input type="checkbox" checked={CATEGORY_LIST[i]}/><span>{node}</span></>
                       return(
                         <TreeView
                           nodeLabel={clabel}
@@ -98,7 +152,7 @@ function Works() {
                         {
                           category[i+1].map((tnode,j)=>{
                             if(j%2==0){
-                              const tlabel=<><input type="checkbox" checked={list[i]}/><span>{tnode}</span></>
+                              const tlabel=<><input type="checkbox" checked={CATEGORY_LIST[i+1][j]}/><span>{tnode}</span></>
                               return(
                                 <TreeView
                                   nodeLabel={tlabel}
@@ -109,7 +163,7 @@ function Works() {
                                       <>
                                       <input 
                                         type="checkbox"
-                                        onChange={(e)=>handleOnChange(e,name)}
+                                        onChange={(e)=>handleOnChange(e,name,i+1,j+1)}
                                         />{name}<br/>
                                       </>
                                     )
